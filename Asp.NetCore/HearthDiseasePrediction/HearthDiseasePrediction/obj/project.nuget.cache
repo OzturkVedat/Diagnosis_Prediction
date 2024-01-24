@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RfXpD+t+x70nC4/Lap4hjNTmx/Ydk05LrE7QCcjUEdI9cbcDdwI4Tmll67NO4+eEJbBueXSGH+FXufYB84mAsw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\asp.netCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
