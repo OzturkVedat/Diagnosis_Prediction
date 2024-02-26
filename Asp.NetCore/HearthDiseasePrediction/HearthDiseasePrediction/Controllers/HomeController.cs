@@ -22,11 +22,11 @@ namespace HearthDiseasePrediction.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Submit(SubmissionViewModel model)
+        public async Task<IActionResult> Submit(HearthDiseaseDiagnosis model)
         {
             if (ModelState.IsValid)
             {
-                // Convert SubmissionViewModel to a dictionary or anonymous object
+                // Convert HearthDiseaseDiagnosisMetrics to a dictionary or anonymous object
                 var data = new
                 {
                     Age = model.Age,
@@ -58,19 +58,10 @@ namespace HearthDiseasePrediction.Controllers
                         var result = await response.Content.ReadAsStringAsync();
                         var prediction = JsonConvert.DeserializeObject<PredictionResult>(result);
 
-                        // Access the prediction result, for example:
-                        var heartDiseasePrediction = prediction.Prediction;
-
-                        // Further processing, redirection, or view rendering based on the prediction
-                        if (heartDiseasePrediction == 0)
+                        if (prediction.Prediction != null)
                         {
-                            // No heart disease, show a success message or redirect to a success view
-                            return RedirectToAction("NoHeartDisease");
-                        }
-                        else if (heartDiseasePrediction == 1)
-                        {
-                            // Heart disease present, show a different message or redirect to a different view
-                            return RedirectToAction("HeartDiseaseDetected");
+                            model.Result = prediction.Prediction;
+                            return View("Views/Results/HearthDiseaseResult.cshtml", model);
                         }
                         else
                         {
@@ -85,19 +76,8 @@ namespace HearthDiseasePrediction.Controllers
                     }
                 }
             }
-
             // If the model state is not valid, return the view with validation errors
             return View(model);
-        }
-
-        public IActionResult NoHeartDisease()
-        {
-            return View("SuccessNoHeartDisease");
-        }
-
-        public IActionResult HeartDiseaseDetected()
-        {
-            return View("SuccessHeartDiseaseDetected");
         }
 
 

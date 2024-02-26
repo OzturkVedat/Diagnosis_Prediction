@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\asp.netCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj": {}
+    "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\asp.netCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj": {
+    "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\asp.netCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj",
         "projectName": "HearthDiseasePrediction",
-        "projectPath": "C:\\Users\\user\\source\\repos\\asp.netCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\asp.netCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

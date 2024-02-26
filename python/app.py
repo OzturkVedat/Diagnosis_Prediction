@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify       # Python Flask API
 import joblib
 
 app = Flask(__name__)
-model = joblib.load('path/to/yourFile.pkl')     # load the pkl file from the same directory
+model = joblib.load('logRes_Model.pkl')     
 
 @app.route('/predict', methods=['POST'])
 def predict():

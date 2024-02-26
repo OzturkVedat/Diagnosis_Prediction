@@ -2,7 +2,7 @@
 
 namespace HearthDiseasePrediction.Models
 {
-    public class SubmissionViewModel
+    public class HearthDiseaseDiagnosis
     {
         [Range(18, 100, ErrorMessage = "Enter a valid age between 18 and 100.")]
         public int Age { get;set; }
@@ -31,6 +31,8 @@ namespace HearthDiseasePrediction.Models
 
         [Range(0, 3, ErrorMessage = "Enter a value between 0 and 3")]
         public int MajorVessels { get; set; }   // slope of the peak exercise ST segment ,nominal, 1 to 3
+
+        public int Result {  get; set; }
 
     }
     public class PredictionResult

@@ -9,49 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HearthDiseasePrediction
 build_property.RootNamespace = HearthDiseasePrediction
-build_property.ProjectDir = C:\Users\user\source\repos\asp.netCore\HearthDiseasePrediction\HearthDiseasePrediction\
+build_property.ProjectDir = C:\Users\user\source\repos\asp.netCore\Hearth_Disease_Prediction\Asp.NetCore\HearthDiseasePrediction\HearthDiseasePrediction\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\source\repos\asp.netCore\HearthDiseasePrediction\HearthDiseasePrediction
+build_property.MSBuildProjectDirectory = C:\Users\user\source\repos\asp.netCore\Hearth_Disease_Prediction\Asp.NetCore\HearthDiseasePrediction\HearthDiseasePrediction
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/Index.cshtml]
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/Privacy.cshtml]
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/Success.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzLmNzaHRtbA==
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Results/HearthDiseaseResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdWx0c1xIZWFydGhEaXNlYXNlUmVzdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/SuccessHeartDiseaseDetected.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzSGVhcnREaXNlYXNlRGV0ZWN0ZWQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/SuccessNoHeartDisease.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzTm9IZWFydERpc2Vhc2UuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Shared/Error.cshtml]
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/_ViewImports.cshtml]
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/_ViewStart.cshtml]
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/asp.netCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Shared/_Layout.cshtml]
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ucdqys4q9k
