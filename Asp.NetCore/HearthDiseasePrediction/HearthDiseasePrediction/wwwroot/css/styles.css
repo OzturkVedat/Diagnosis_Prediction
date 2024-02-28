@@ -1,0 +1,36 @@
+﻿@media screen and (min-width: 1000px) {
+    .form {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 3%;
+        margin: 3%;
+    }
+
+        .form label {
+            margin: 2%;
+        }
+
+        .form button {
+            grid-column: span 2;
+        }
+}
+
+@media screen and (max-width: 999px) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1%;
+        margin: 1%;
+    }
+
+        .form label {
+            margin: 1.5%;
+        }
+}
+
+.form button {
+    margin-top: 3%;
+    place-self: center;
+    padding: 0.5% 1.6%;
+    font-size: 1.5rem;
+}

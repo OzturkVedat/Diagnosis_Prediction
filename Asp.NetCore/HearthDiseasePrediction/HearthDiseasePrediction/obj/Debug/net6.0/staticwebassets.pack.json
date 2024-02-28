@@ -9,8 +9,20 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\wwwroot\\images\\diabetes-hero.jpg",
+      "PackagePath": "staticwebassets\\images\\diabetes-hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\wwwroot\\images\\hearth-hero.jpg",
+      "PackagePath": "staticwebassets\\images\\hearth-hero.jpg"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\wwwroot\\js\\site.js",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HearthDiseasePrediction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+709fa1d79311735995167d434e3502a73ea61ad1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db2e007426f649f1a23e5b50137a15f7972f6281")]
 [assembly: System.Reflection.AssemblyProductAttribute("HearthDiseasePrediction")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HearthDiseasePrediction")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

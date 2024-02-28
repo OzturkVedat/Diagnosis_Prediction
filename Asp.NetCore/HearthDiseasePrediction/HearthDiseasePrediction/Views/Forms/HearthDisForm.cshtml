@@ -1,0 +1,117 @@
+﻿@model HearthDiseasePrediction.Models.HearthDiseaseDiagnosis
+
+@{
+    ViewData["Title"] = "Hearth Disease Diagnosis Form";
+}
+
+<h1>@ViewData["Title"]</h1>
+<form asp-controller="HearthDisPred" asp-action="Submit" method="post" class="form">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Age">Age of patient</label>
+        <input asp-for="Age" class="form-control" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Gender"></label>
+        <select asp-for="Gender" class="form-control">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ChestPainType">Chest Pain Type</label>
+        <select asp-for="ChestPainType" class="form-control">
+            <option value="0">Typical Angina</option>
+            <option value="1">Atypical Angina</option>
+            <option value="2">Non-anginal Pain</option>
+            <option value="3">Asymptomatic</option>
+        </select>
+        <span asp-validation-for="ChestPainType" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="MaxHearthRate">Max Hearth Rate (71-202 bpm)</label>
+        <input asp-for="MaxHearthRate" class="form-control" />
+        <span asp-validation-for="MaxHearthRate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RestingBloodPressure">Resting blood pressure (94-200 mmHg)</label>
+        <input asp-for="RestingBloodPressure" class="form-control" />
+        <span asp-validation-for="RestingBloodPressure" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SerumCholesterol">Serum Cholesterol Level (126-564 mg/dL)</label>
+        <input asp-for="SerumCholesterol" class="form-control" />
+        <span asp-validation-for="SerumCholesterol" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FastingBloodSugar">Is fasting blood sugar (fbs) greater than 120 mg/dL</label>
+        <select asp-for="FastingBloodSugar" class="form-control">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <span asp-validation-for="FastingBloodSugar" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RestingElectrocardio">Resting ECG result</label>
+        <select asp-for="RestingElectrocardio" class="form-control">
+            <option value="0">Normal</option>
+            <option value="1">ST-T Wave Abnormality</option>
+            <option value="2">Ventricular Hypertrophy</option>
+        </select>
+        <span asp-validation-for="RestingElectrocardio" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ExerciseAngina">Occurrence of exercise angina</label>
+        <select asp-for="ExerciseAngina" class="form-control">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <span asp-validation-for="ExerciseAngina" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="OldPeak">Old Peak/Treadmill test for ST depression (ranged 0-6.2)</label>
+        <input asp-for="OldPeak" class="form-control" />
+        <span asp-validation-for="OldPeak" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SlopeST">Slope of the peak exercise ST segment:</label>
+        <select asp-for="SlopeST" class="form-control">
+            <option value="1">Unsloping</option>
+            <option value="2">Flat</option>
+            <option value="3">Downsloping</option>
+        </select>
+        <span asp-validation-for="SlopeST" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MajorVessels">Number of major vessels:</label>
+        <select asp-for="MajorVessels" class="form-control">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <span asp-validation-for="MajorVessels" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

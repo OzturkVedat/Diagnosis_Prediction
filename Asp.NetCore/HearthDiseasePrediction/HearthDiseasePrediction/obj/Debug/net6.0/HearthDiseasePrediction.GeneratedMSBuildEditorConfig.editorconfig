@@ -18,12 +18,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\user\source\repos\asp.netCore\Hearth_Disease_Prediction\Asp.NetCore\HearthDiseasePrediction\HearthDiseasePrediction
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Forms/DiabetesForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcRGlhYmV0ZXNGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Forms/HearthDisForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcSGVhcnRoRGlzRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Results/DiabetesResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdWx0c1xEaWFiZXRlc1Jlc3VsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/source/repos/asp.netCore/Hearth_Disease_Prediction/Asp.NetCore/HearthDiseasePrediction/HearthDiseasePrediction/Views/Results/HearthDiseaseResult.cshtml]

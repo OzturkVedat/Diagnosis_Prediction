@@ -1,137 +1,43 @@
-﻿@model HearthDiseaseDiagnosis
-@{
-    ViewData["Title"] = "Submit Form";
-}
-
-<h2>Submit Form</h2>
-
-<form asp-action="Submit" method="post">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <div class="form-group">
-        <label asp-for="Age"></label>
-        @Html.TextBoxFor(model => model.Age, new { @class = "form-control", type = "number", min = 18, max = 100 })
-        @Html.ValidationMessageFor(model => model.Age, "", new { @class = "text-danger" })
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <style>
+        .card {
+            width: 300px;
+            margin: 20px;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/diabetes-hero.jpg" alt="Diabetes Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Diabetes Form</h5>
+                        <p class="card-text">Prediction of Diabetes</p>
+                        <a asp-action="DiabetesForm" class="btn btn-primary">Check out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/hearth-hero.jpg" alt="Heart Disease Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Heart Disease Form</h5>
+                        <p class="card-text">Prediction of Hearth Disease</p>
+                        <a asp-action="HearthDisForm" class="btn btn-primary">Check out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="form-group">
-        <label for="Gender">Gender:</label>
-        @Html.DropDownListFor(model => model.Gender,
-        new SelectList(new[]
-        {
-        new { Value = false, Text = "Female" },
-        new { Value = true, Text = "Male" }
-        }, "Value", "Text"),
-        "Select Gender",
-        new { @class = "form-control" })
-    </div>
-
-    <div class="form-group">
-        <label for="ChestPainType">Chest Pain Type:</label>
-        @Html.DropDownListFor(model => model.ChestPainType,
-        new SelectList(new[]
-        {
-        new { Value = 0, Text = "Typical Angina" },
-        new { Value = 1, Text = "Atypical Angina" },
-        new { Value = 2, Text = "Non-anginal Pain" },
-        new { Value = 3, Text = "Asymptomatic" }
-        }, "Value", "Text"),
-        "Select Chest Pain Type",
-        new { @class = "form-control" })
-    </div>
-
-
-    <div class="form-group">
-        <label asp-for="MaxHearthRate"></label>
-        @Html.TextBoxFor(model => model.MaxHearthRate, new { @class = "form-control", type = "number", min = 71, max = 202 })
-        @Html.ValidationMessageFor(model => model.MaxHearthRate, "", new { @class = "text-danger" })
-    </div>
-
-    <div class="form-group">
-        <label asp-for="RestingBloodPressure"></label>
-        @Html.TextBoxFor(model => model.RestingBloodPressure, new { @class = "form-control", type = "number", min = 94, max = 200 })
-        @Html.ValidationMessageFor(model => model.RestingBloodPressure, "", new { @class = "text-danger" })
-    </div>
-
-    <div class="form-group">
-        <label asp-for="SerumCholesterol"></label>
-        @Html.TextBoxFor(model => model.SerumCholesterol, new { @class = "form-control", type = "number", min = 126, max = 564 })
-        @Html.ValidationMessageFor(model => model.SerumCholesterol, "", new { @class = "text-danger" })
-    </div>
-
-    <div class="form-group">
-        <label for="FastingBloodSugar">Fasting Blood Sugar:</label>
-        @Html.DropDownListFor(model => model.FastingBloodSugar,
-        new SelectList(new[]
-        {
-        new { Value = false, Text = "Smaller or equal to 120 mg/dl" },
-        new { Value = true, Text = "Greater than 120 mg/dl" }
-        }, "Value", "Text"),
-        "Select Fasting Blood Sugar",
-        new { @class = "form-control" })
-    </div>
-
-
-    <div class="form-group">
-        <label for="RestingElectrocardio">Resting Electrocardiodigram Results:</label>
-        @Html.DropDownListFor(model => model.RestingElectrocardio,
-        new SelectList(new[]
-        {
-        new { Value = 0, Text = "Normal" },
-        new { Value = 1, Text = "Having ST-T Wave Abnormality" },
-        new { Value = 2, Text = "Showing Probable/Definite Left Ventricular Hypertrophy by Estes' Criteria" }
-        }, "Value", "Text"),
-        "Select Resting ECG Result",
-        new { @class = "form-control" })
-    </div>
-
-    <div class="form-group">
-        <label for="ExerciseAngina">Exercise Angina Presence:</label>
-        @Html.DropDownListFor(model => model.ExerciseAngina,
-        new SelectList(new[]
-        {
-        new { Value = false, Text = "No" },
-        new { Value = true, Text = "Yes" }
-        }, "Value", "Text"),
-        "Exercise Angina Presence",
-        new { @class = "form-control" })
-    </div>
-
-
-    <div class="form-group">
-        <label asp-for="OldPeak"></label>
-        @Html.TextBoxFor(model => model.OldPeak, new { @class = "form-control", type = "number", step = "0.1", min = "0", max = "6.2" })
-        @Html.ValidationMessageFor(model => model.OldPeak, "", new { @class = "text-danger" })
-    </div>
-
-    <div class="form-group">
-        <label for="SlopeST">Slope of the Peak Exercise ST Segment:</label>
-        @Html.DropDownListFor(model => model.SlopeST,
-        new SelectList(new[]
-        {
-        new { Value = 1, Text = "Unsloping" },
-        new { Value = 2, Text = "Flat" },
-        new { Value = 3, Text = "Downsloping" }
-        }, "Value", "Text"),
-        "Select Slope ST",
-        new { @class = "form-control" })
-    </div>
-
-
-    <div class="form-group">
-        <label for="MajorVessels">Number of Major Vessels:</label>
-        @Html.DropDownListFor(model => model.MajorVessels,
-        new SelectList(new[]
-        {
-        new { Value = 0, Text = "0" },
-        new { Value = 1, Text = "1" },
-        new { Value = 2, Text = "2" },
-        new { Value = 3, Text = "3" }
-        }, "Value", "Text"),
-        "Select Number of Major Vessels",
-        new { @class = "form-control" })
-    </div>
-
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
+</body>
+</html>

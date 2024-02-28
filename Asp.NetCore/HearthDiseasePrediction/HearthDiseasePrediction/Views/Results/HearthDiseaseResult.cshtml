@@ -1,7 +1,6 @@
 ﻿@model HearthDiseasePrediction.Models.HearthDiseaseDiagnosis
 
 @{
-    Layout = null;
     ViewBag.Title = "Heart Disease Detection Result";
 }
 
@@ -13,53 +12,33 @@
 <body>
     <h1>Heart Disease Detection Result</h1>
 
-    @if (Model.Result == 1)
-    {
-        <div>
-            <h2>Patient has been detected with heart disease.</h2>
-            <p>Details:</p>
-            <ul>
-                <li>Age: @Model.Age</li>
-                <li>Gender: @(Model.Gender ? "Male" : "Female")</li>
-                <li>Chest Pain Type: @Model.ChestPainType</li>
-                <li>Max Heart Rate: @Model.MaxHearthRate</li>
-                <li>Resting Blood Pressure: @Model.RestingBloodPressure</li>
-                <li>Serum Cholesterol: @Model.SerumCholesterol</li>
-                <li>Fasting Blood Sugar: @(Model.FastingBloodSugar ? "Yes" : "No")</li>
-                <li>Resting Electrocardiogram: @Model.RestingElectrocardio</li>
-                <li>Exercise Angina: @(Model.ExerciseAngina ? "Yes" : "No")</li>
-                <li>Old Peak: @Model.OldPeak</li>
-                <li>Slope of ST Segment: @Model.SlopeST</li>
-                <li>Number of Major Vessels: @Model.MajorVessels</li>
-            </ul>
-            <p>Please proceed with appropriate medical care.</p>
-        </div>
-    }
-    else
-    {
-        <div>
-            <h2>No heart disease detected in the patient.</h2>
-            <p>Details:</p>
-            <ul>
-                <li>Age: @Model.Age</li>
-                <li>Gender: @(Model.Gender ? "Male" : "Female")</li>
-                <li>Chest Pain Type: @Model.ChestPainType</li>
-                <li>Max Heart Rate: @Model.MaxHearthRate</li>
-                <li>Resting Blood Pressure: @Model.RestingBloodPressure</li>
-                <li>Serum Cholesterol: @Model.SerumCholesterol</li>
-                <li>Fasting Blood Sugar: @(Model.FastingBloodSugar ? "Yes" : "No")</li>
-                <li>Resting Electrocardiogram: @Model.RestingElectrocardio</li>
-                <li>Exercise Angina: @(Model.ExerciseAngina ? "Yes" : "No")</li>
-                <li>Old Peak: @Model.OldPeak</li>
-                <li>Slope of ST Segment: @Model.SlopeST</li>
-                <li>Number of Major Vessels: @Model.MajorVessels</li>
-            </ul>
-            <p>No further action needed at this time.</p>
-        </div>
-    }
-
     <div>
-        <a href="@Url.Action("Index", "Patients")">Back to Patients List</a>
+        @if (Model.Result == 1)
+        {
+            <h2>Patient has been detected with a possible heart disease.</h2>
+            <p>Please proceed with appropriate medical care.</p>
+        }
+        else
+        {
+            <h2>No sign of heart disease found in the patient.</h2>
+            <p>No further action needed at this time.</p>
+        }
+
+        <p>Details:</p>
+        <ul>
+            <li>Age: @Model.Age</li>
+            <li>Gender: @Model.Gender</li>
+            <li>Chest Pain Type: @Model.ChestPainType</li>
+            <li>Max Heart Rate: @Model.MaxHearthRate</li>
+            <li>Resting Blood Pressure: @Model.RestingBloodPressure</li>
+            <li>Serum Cholesterol: @Model.SerumCholesterol</li>
+            <li>Fasting Blood Sugar: @Model.FastingBloodSugar </li>
+            <li>Resting Electrocardiogram: @Model.RestingElectrocardio</li>
+            <li>Exercise Angina: @Model.ExerciseAngina</li>
+            <li>Old Peak: @Model.OldPeak</li>
+            <li>Slope of ST Segment: @Model.SlopeST</li>
+            <li>Number of Major Vessels: @Model.MajorVessels</li>
+        </ul>
     </div>
 </body>
 </html>
