@@ -16,7 +16,13 @@ def predict_logistic():
                  data['FastingBloodSugar'],
                 data['RestingElectrocardio'],data['MaxHearthRate'], data['ExerciseAngina'], data['OldPeak'], data['SlopeST'],
                 data['MajorVessels']]
+    
+    print("Received data for logistic regression prediction:")
+    print("Features:", features)
+    
     logRes_prediction = logRes_model.predict([features])
+    
+    print("Logistic regression prediction:", int(logRes_prediction[0]))
 
     return jsonify({'logRes_prediction': int(logRes_prediction[0])})
 
@@ -26,7 +32,13 @@ def predict_lightgbm():
     features = [data['BMI'],data['Age'],   data['GenHlth'],
                 data['Income'], data['HighChol'],data['Sex'], data['HearthDiseaseorAttack'],
                 data['HvyAlcoholConsump'], data['CholCheck'], data['PhsylHlth']]
+    
+    print("Received data for LightGBM prediction:")
+    print("Features:", features)
+    
     lightGB_prediction = lightGB_model.predict([features])
+    
+    print("LightGBM prediction:", int(lightGB_prediction[0]))
 
     return jsonify({'lightGB_prediction': int(lightGB_prediction[0])})
 

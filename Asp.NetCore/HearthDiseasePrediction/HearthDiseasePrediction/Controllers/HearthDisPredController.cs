@@ -30,16 +30,16 @@ namespace HearthDiseasePrediction.Controllers
                 var data = new
                 {
                     Age = model.Age,
-                    Gender = model.Gender,
-                    ChestPainType = model.ChestPainType,
+                    Gender = (int)model.Gender,
+                    ChestPainType = (int)model.ChestPainType,
                     MaxHearthRate = model.MaxHearthRate,
                     RestingBloodPressure = model.RestingBloodPressure,
                     SerumCholesterol = model.SerumCholesterol,
-                    FastingBloodSugar = model.FastingBloodSugar,
-                    RestingElectrocardio = model.RestingElectrocardio,
-                    ExerciseAngina = model.ExerciseAngina,
+                    FastingBloodSugar = (int)model.FastingBloodSugar,
+                    RestingElectrocardio = (int)model.RestingElectrocardio,
+                    ExerciseAngina = (int)model.ExerciseAngina,
                     OldPeak = model.OldPeak,
-                    SlopeST = model.SlopeST,
+                    SlopeST = (int)model.SlopeST,
                     MajorVessels = model.MajorVessels
                 };
 

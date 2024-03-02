@@ -27,7 +27,7 @@ namespace HearthDiseasePrediction.Models
         [Range(0, 6.2, ErrorMessage = "Enter a value between 0 and 6.2")]
         public decimal OldPeak { get; set; }  // treadmill test for ST depression (ranged 0-6.2)
 
-        public int SlopeST { get; set; }   // slope of the peak exercise ST segment ,nominal, 1 to 3
+        public SlopeST SlopeST { get; set; }   // slope of the peak exercise ST segment ,nominal, 1 to 3
 
         public int MajorVessels { get; set; }   // slope of the peak exercise ST segment ,nominal, 1 to 3
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I2o0Z2Stu+57+FCIMZS/V9MgI/sLUeav9C9LFZ1ZwVju+zRvwxQ122RUzpCTbUsbPYYZMOJ0bjL+yDP13oUvLg==",
+  "dgSpecHash": "B4fqZ7C9DP3KsPfmJncSL4yFpIEuRSHcFeKHO0/wbqLnXlvj1qOjHVGN+ofnze1idESaQORIyfJ87Rv3DhvpeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\asp.netCore\\Hearth_Disease_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\asp.netCore\\Diagnosis_Prediction\\Asp.NetCore\\HearthDiseasePrediction\\HearthDiseasePrediction\\HearthDiseasePrediction.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

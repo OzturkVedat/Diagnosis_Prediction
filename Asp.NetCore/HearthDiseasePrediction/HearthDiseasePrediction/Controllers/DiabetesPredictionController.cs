@@ -17,20 +17,21 @@ namespace HearthDiseasePrediction.Controllers
             if (ModelState.IsValid)
             {
                 int enteredAge = model.Age;
-                model.Age = enteredAge >= 80 ? 13 : (enteredAge - 18) / 5 + 1;            
+                model.Age = enteredAge >= 80 ? 13 : (enteredAge - 18) / 5 + 1;
                 var data = new
                 {
                     BMI = model.BMI,
                     Age = model.Age,
-                    GenHlth = model.GenHlth,
-                    Income = model.Income,
-                    HighChol = model.HighChol,
-                    Sex = model.Sex,
-                    HearthDiseaseorAttack = model.HearthDiseaseorAttack,
-                    HvyAlcoholConsump = model.HvyAlcoholConsump,
-                    CholCheck = model.CholCheck,
+                    GenHlth = (int)model.GenHlth,
+                    Income = (int)model.Income,
+                    HighChol = (int)model.HighChol,
+                    Sex = (int)model.Sex,
+                    HearthDiseaseorAttack = (int)model.HearthDiseaseorAttack,
+                    HvyAlcoholConsump = (int)model.HvyAlcoholConsump,
+                    CholCheck = (int)model.CholCheck,
                     PhsylHlth = model.PhsylHlth
                 };
+
 
                 using (var client = new HttpClient())
                 {
