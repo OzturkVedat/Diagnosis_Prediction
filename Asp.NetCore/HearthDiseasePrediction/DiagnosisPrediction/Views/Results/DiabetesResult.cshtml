@@ -1,0 +1,44 @@
+﻿@model DiagnosisPrediction.Models.DiabetesDiagnosis
+
+@{
+    ViewBag.Title = "Diabetes Detection Result";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Detection Result</title>
+</head>
+<body>
+    <h1>Diabetes Detection Result</h1>
+
+    @if (Model.Result == 1)
+    {
+        <div>
+            <h2>Patient has been detected with possible diabetes.</h2>
+            <p>Please proceed with appropriate medical care.</p>
+        </div>
+    }
+    else
+    {
+        <div>
+            <h2>No sign of diabetes found in the patient.</h2>
+            <p>No further action needed at this time.</p>
+        </div>
+    }
+    <p>Details:</p>
+    <ul>
+        <li>Age: @Model.Age</li>
+        <li>Gender: @(Model.Sex == DiagnosisPrediction.Models.Genders.Male ? "Male" : "Female")</li>
+        <li>BMI: @Model.BMI</li>
+        <li>General health bias: @Enum.GetName(typeof(DiagnosisPrediction.Models.HealthStatus), Model.GenHlth)</li>
+        <li>Cholesterol check in last 5 years: @(Model.CholCheck == DiagnosisPrediction.Models.Confirm.Yes ? "Yes" : "No")</li>
+        <li>High cholesterol: @(Model.HighChol == DiagnosisPrediction.Models.Confirm.Yes ? "Yes" : "No")</li>
+        <li>Heavy alcohol consumption: @(Model.HvyAlcoholConsump == DiagnosisPrediction.Models.Confirm.Yes ? "Yes" : "No")</li>
+        <li>Heart disease or attack occurrence: @(Model.HearthDiseaseorAttack == DiagnosisPrediction.Models.Confirm.Yes ? "Yes" : "No")</li>
+        <li>Days of not good physical health in last 30 days: @Model.PhsylHlth</li>
+        <li>Income: @Enum.GetName(typeof(DiagnosisPrediction.Models.IncomeRange), Model.Income)</li>
+    </ul>
+
+</body>
+</html>
